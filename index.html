@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Template Phrases</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Template Phrases</h1>
+
+    <div class="input-group">
+      <span class="input-group-addon">Meetings</span>
+      <input readonly id="myInput1" type="text" class="form-control" name="msg"
+        value="Note: This is the best suitable time I found with maximum availability. If this is not a suitable time, please suggest a new timeslot.">
+      <div class="input-group-btn">
+        <button class="btn btn-default" onclick="myFunction('myInput1')"><i class="glyphicon glyphicon-copy"></i></button>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon">Meetings</span>
+      <input readonly id="myInput2" type="text" class="form-control" name="msg"
+        value="Hi All, Setting up this meeting for [[]].">
+      <div class="input-group-btn">
+        <button class="btn btn-default" onclick="myFunction('myInput2')"><i class="glyphicon glyphicon-copy"></i></button>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon">Congrats</span>
+      <input readonly id="myInput3" type="text" class="form-control" name="msg"
+        value="Hi Team, this is the example of great work! Kudos to the entire team. Keep it up!!!">
+      <div class="input-group-btn">
+        <button class="btn btn-default" onclick="myFunction('myInput3')"><i class="glyphicon glyphicon-copy"></i></button>
+      </div>
+    </div>
+
+</div>
+
+<script>
+    function myFunction(elementid) {
+      var copyText = document.getElementById(elementid);
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+    }
+  </script>
+
+</body>
+
+</html>
