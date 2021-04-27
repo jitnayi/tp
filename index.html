@@ -8,56 +8,180 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .span-addon {
+      display: block;
+      background-color: green !important;
+      color: white;
+      width: 15%;
+      word-wrap:break-word !important;
+      text-align: center;
+      line-height: normal;
+    }
+    .span-end-addon {
+      background-color: blue !important;
+      color: white;
+      width: 10%;
+      text-align: center;
+      vertical-align: middle !important;
+      line-height: normal;
+    }
+
+    .h1-addon {
+      background-color: grey;
+      color: white;
+      font-size: 1cm;
+    }
+
+    .btn-addon {
+      background-color: blue;
+      color: white;
+
+    }
+
+    .textarea-addon {
+      resize: none;
+    }
+  </style>
 </head>
 
 <body>
 
+  <br />
   <div class="container">
-    <h1>TEMPLATE PHRASES</h1>
+    <h1 class="h1-addon">TEMPLATE PHRASES</h1>
 
-    <div class="input-group">
-      <span class="input-group-addon" style="width:10%;">Meetings</span>
-      <input readonly id="myInput1" type="text" class="form-control" name="msg"
-        value="Note: This is the best suitable time I found with maximum availability. If this is not a suitable time, please suggest a new timeslot.">
-      <div class="input-group-btn">
-        <button class="btn btn-default" onclick="myFunction('myInput1')"><i class="glyphicon glyphicon-copy"></i></button>
-      </div>
+    <div class="input-group" style="padding-bottom:5px;width: 100%;">
+      <span class="align-middle input-group-addon span-addon">Meeting MOM</span>
+      <textarea readonly id="myInput1" type="text" class="form-control textarea-addon" name="msg">
+        Hi Everyone, 
+        Thanks for joining the call. Below are the major MOM points discussed and agreed upon during the call.
+        Meeting Date: 
+        Meeting Title:
+        Meeting Attendees:
+        UPdate:
+        [MOM Point 1]
+        [MOM Point 2]
+        Please add / edit if I have missed anything or please reach out to me for any query.
+        Thanks!
+        [Your Name]
+      </textarea>
+      <span class="align-middle input-group-addon span-end-addon" style="cursor:pointer" onclick="myFunction('myInput1')">Copy</span>
     </div>
-    <div class="input-group">
-      <span class="input-group-addon" style="width:10%;">Meetings</span>
-      <input readonly id="myInput2" type="text" class="form-control" name="msg"
-        value="Hi All, Setting up this meeting for [[]].">
-      <div class="input-group-btn">
-        <button class="btn btn-default" onclick="myFunction('myInput2')"><i class="glyphicon glyphicon-copy"></i></button>
-      </div>
+
+
+    <div class="input-group" style="padding-bottom:5px;width: 100%;">
+      <span class="align-middle input-group-addon span-addon">Email over Meeting</span>
+      <textarea readonly id="myInput2" type="text" class="form-control textarea-addon" name="msg">
+        Hello [Name], 
+        I’d love to hear more, but my schedule is really full at the moment. How about we continue the conversation over email for now? 
+        Then if it makes sense to do so, we can schedule a call at a later date.
+        Thanks!
+        [Your Name]
+      </textarea>
+      <span class="align-middle input-group-addon span-end-addon" style="cursor:pointer" onclick="myFunction('myInput2')">Copy</span>
     </div>
-    <div class="input-group">
-      <span class="input-group-addon" style="width:10%;">Congrats</span>
-      <input readonly id="myInput3" type="text" class="form-control" name="msg"
-        value="Hi Team, this is the example of great work! Kudos to the entire team. Keep it up!!!">
-      <div class="input-group-btn">
-        <button class="btn btn-default" onclick="myFunction('myInput3')"><i class="glyphicon glyphicon-copy"></i></button>
-      </div>
+
+    <div class="input-group" style="padding-bottom:5px;width: 100%;">
+      <span class="align-middle input-group-addon span-addon">Escalation Response</span>
+      <textarea readonly id="myInput3" type="text" class="form-control textarea-addon" name="msg">
+        Hi [Name],
+        Thank you for your honesty and constructive feedback. I understand where you’re coming from, and think it would be helpful to discuss further.
+        Do you have time to add a call or cup of coffee to your schedule this week? I think it would be helpful for us to talk about next steps, and 
+        how we might avoid similar miscommunication in the future.
+        Best,
+        [Your Name]
+      </textarea>
+      <span class="align-middle input-group-addon span-end-addon" style="cursor:pointer" onclick="myFunction('myInput3')">Copy</span>
     </div>
-    <div class="input-group">
+
+    <div class="input-group" style="padding-bottom:5px;width: 100%;">
+      <span class="align-middle input-group-addon span-addon">Meeting</span>
+      <textarea readonly id="myInput3" type="text" class="form-control textarea-addon" name="msg">
+        Hi Everyone,
+        As discussed, setting up this meeting to discuss below items.
+        [Meeting Agenda]
+        [Meeting Agenda]
+        Note: This is the best suitable time I found with maximum availability. If this is not a suitable time, please suggest a new timeslot.
+        Best,
+        [Your Name]
+      </textarea>
+      <span class="align-middle input-group-addon span-end-addon" style="cursor:pointer" onclick="myFunction('myInput3')">Copy</span>
+    </div>
+ 
+    <div class="input-group" style="padding-bottom:5px;width: 100%;">
+      <span class="align-middle input-group-addon span-addon">Appreciation Response</span>
+      <textarea readonly id="myInput3" type="text" class="form-control textarea-addon" name="msg">
+        Thanks [Appreciaters Name], for taking time and sharing the feedback. This really means a lot to us!
+        Regards,
+        [Your Name]
+      </textarea>
+      <span class="align-middle input-group-addon span-end-addon" style="cursor:pointer" onclick="myFunction('myInput3')">Copy</span>
+    </div>
+
+    <div class="input-group" style="padding-bottom:5px;width: 100%;">
+      <span class="align-middle input-group-addon span-addon">Good Job!</span>
+      <textarea readonly id="myInput3" type="text" class="form-control textarea-addon" name="msg">
+        Hi Team,
+        This is the example of great work! Kudos to the entire team. Keep it up!!!
+        [Your Name]
+      </textarea>
+      <span class="align-middle input-group-addon span-end-addon" style="cursor:pointer" onclick="myFunction('myInput3')">Copy</span>
+    </div>
+
+
+    <div class="input-group" style="padding-bottom:5px;width: 100%;">
+      <span class="align-middle input-group-addon span-addon">Remidner</span>
+      <textarea readonly id="myInput3" type="text" class="form-control textarea-addon" name="msg">
+        Hi Everyone,
+        This is a [1st] kind reminder  to do [Actio item]. Please provide your kind consideratin to this matter and close this at your earliest.
+        Thanks,
+        [Your Name]
+      </textarea>
+      <span class="align-middle input-group-addon span-end-addon" style="cursor:pointer" onclick="myFunction('myInput3')">Copy</span>
+    </div>
+
+    <div class="input-group" style="padding-bottom:5px;width: 100%;">
+      <span class="align-middle input-group-addon span-addon">Truly Human Notice</span>
+      <textarea readonly id="myInput3" type="text" class="form-control textarea-addon" name="msg">
+        Thanks,
+        [Your Name]
+        TRULY HUMAN NOTICE: I am sending you this email at a time that works for me. I only expect and encourage you to make TRULY HUMAN choices 
+        and support flexible working by only responding to this at a time that suits you.
+      </textarea>
+      <span class="align-middle input-group-addon span-end-addon" style="cursor:pointer" onclick="myFunction('myInput3')">Copy</span>
+    </div>
+
+    
+    <!-- 
+    <div class="input-group" style="padding-bottom:5px;">
       <span class="input-group-addon" style="width:10%;">Reminder</span>
       <input readonly id="myInput4" type="text" class="form-control" name="msg"
         value="Hi All, This is a kind reminder to update your profile on people portal.">
       <div class="input-group-btn">
-        <button class="btn btn-default" onclick="myFunction('myInput4')"><i class="glyphicon glyphicon-copy"></i></button>
+        <button class="btn btn-default" onclick="myFunction('myInput4')">Copy</button>
       </div>
     </div>
-    <div class="input-group">
+    <div class="input-group" style="padding-bottom:5px;">
       <span class="input-group-addon" style="width:10%;">Notice</span>
       <input readonly id="myInput5" type="text" class="form-control" name="msg"
-        value="TRULY HUMAN NOTICE: I am sending you this email at a time that works for me. I only expect and encourage you to make TRULY HUMAN choices and support flexible working by only responding to this at a time that suits you.">
+        value="Test Text">
       <div class="input-group-btn">
-        <button class="btn btn-default" onclick="myFunction('myInput5')"><i class="glyphicon glyphicon-copy"></i></button>
+        <button class="btn btn-default" onclick="myFunction('myInput5')">Copy</button>
       </div>
-    </div>
-</div>
+    </div> -->
+  </div>
 
-<script>
+  <script>
     function myFunction(elementid) {
       var copyText = document.getElementById(elementid);
       copyText.select();
